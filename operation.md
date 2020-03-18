@@ -35,6 +35,19 @@
 ![](img/img1.png)
 1. create & checkout `op3` branch  
 `git checkout -b op3`
-1. add & commit `operation.md` file and push `op3`  
+1. fix & commit `operation.md` file and push `op3`  
 `git add operation.md ; git commit -m "fix operation.md" ; git push origin op3`
 1. create pull request to `staging` from `op3`
+1. checkout `staging` branch  
+`git checkout staging`
+1. merge `master` branch with `staging` branch  
+`git merge master --no-ff`
+*Merge made by the 'recursive' strategy.*
+1. push `staging`
+`git push origin staging`
+1. network at this time is as follows:  
+![](img/img2.png)
+1. checkout `op3` branch  
+`git checkout op3`
+1. fix & commit `operation.md` file and push `op3`  
+`git add -A ; git commit -m "fix operation.md" ; git push origin op3`
