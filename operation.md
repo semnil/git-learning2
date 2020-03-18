@@ -9,3 +9,7 @@
 `git checkout op1`
 1. add & commit `operation.md` file and push `op1`  
 `git add operation.md ; git commit -m "add operation.md" ; git push origin op1`
+1. checkout `op2` branch  
+`git checkout op2`
+1. add & commit `operation.md` file and push `op2`  
+`git add operation.md ; git commit -m "add operation.md" ; git push origin op2`
