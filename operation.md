@@ -13,3 +13,28 @@
 `git checkout op2`
 1. add & commit `operation.md` file and push `op2`  
 `git add operation.md ; git commit -m "add operation.md" ; git push origin op2`
+1. checkout `master` branch  
+`git checkout master`
+1. merge `op1` branch with `master` branch  
+`git merge --no-ff op1`
+1. merge `op2` branch with `master` branch  
+`git merge --no-ff op2`  
+*need to resolve conflicts*
+1. checkout `staging` branch  
+`git checkout staging`
+1. merge `op2` branch with `staging` branch  
+`git merge --no-ff op2`  
+1. merge `op1` branch with `staging` branch  
+`git merge --no-ff op1`
+*need to resolve conflicts*
+1. checkout `master` branch  
+`git checkout master`
+1. push `master` and `staging`  
+`git push origin master:master ; git push origin staging:staging`
+1. network at this time is as follows:  
+![](img/img1.png)
+1. create & checkout `op3` branch  
+`git checkout -b op3`
+1. add & commit `operation.md` file and push `op3`  
+`git add operation.md ; git commit -m "fix operation.md" ; git push origin op3`
+1. create pull request to `staging` from `op3`
